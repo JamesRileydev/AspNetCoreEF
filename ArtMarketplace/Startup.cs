@@ -18,6 +18,7 @@ namespace ArtMarketplace
         {
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            app.UseNodeModules();
         }
     }
 }
