@@ -21,5 +21,12 @@ namespace ArtMarketplace.Controllers
 
             return View();
         }
+
+        public IActionResult About()
+        {
+            ViewBag.Title = "About";
+
+            return View();
+        }
     }
 }
