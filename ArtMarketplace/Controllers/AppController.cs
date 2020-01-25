@@ -5,11 +5,6 @@ namespace ArtMarketplace.Controllers
 {
     public class AppController: Controller
     {
-        public AppController()
-        {
-
-        }
-
         public IActionResult Index()
         {
             return View();
