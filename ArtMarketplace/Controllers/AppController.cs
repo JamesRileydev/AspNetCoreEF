@@ -12,7 +12,13 @@ namespace ArtMarketplace.Controllers
 
         public IActionResult Index()
         {
-            throw new InvalidOperationException();
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            ViewBag.Title = "Contact Us";
+
             return View();
         }
     }

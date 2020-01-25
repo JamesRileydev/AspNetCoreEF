@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+    //ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Art Marketplace: @ViewBag.Title</title>
+    <link href="~/css/index.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>Welcome to Art Marketplace</header>
+    <section>
+        <h1>@ViewBag.Title</h1>
+        @RenderBody()
+    </section>
+    <footer>Copyright 2020 </footer>
+
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/index.js"></script>
+</body>
+</html>
+
+
