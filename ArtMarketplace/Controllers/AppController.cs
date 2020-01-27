@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ArtMarketplace.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 
 namespace ArtMarketplace.Controllers
@@ -13,14 +14,14 @@ namespace ArtMarketplace.Controllers
         [HttpGet("contact")]
         public IActionResult Contact()
         {
-            ViewBag.Title = "Contact Us";
 
             return View();
         }
 
        [HttpPost("contact")]
-        public IActionResult Contact(object model)
+        public IActionResult Contact(ContactInfo contactInfo)
         {
+
             return View();
         }
 
