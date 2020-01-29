@@ -1,6 +1,5 @@
-﻿using ArtMarketplace.Models;
+﻿using ArtMarketplace.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using System;
 
 namespace ArtMarketplace.Controllers
 {
@@ -14,14 +13,22 @@ namespace ArtMarketplace.Controllers
         [HttpGet("contact")]
         public IActionResult Contact()
         {
-
+  
             return View();
         }
 
        [HttpPost("contact")]
-        public IActionResult Contact(ContactInfo contactInfo)
+        public IActionResult Contact(ContactViewModel vm)
         {
+            if (ModelState.IsValid)
+            {
+                //Send the email
 
+            }
+            else
+            {
+                //Show errors
+            }
             return View();
         }
 
