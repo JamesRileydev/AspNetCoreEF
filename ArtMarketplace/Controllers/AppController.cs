@@ -20,7 +20,7 @@ namespace ArtMarketplace.Controllers
        [HttpPost("contact")]
         public IActionResult Contact(ContactViewModel vm)
         {
-            if (ModelState.IsValid)
+             if (ModelState.IsValid)
             {
                 //Send the email
 
