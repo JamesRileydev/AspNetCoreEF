@@ -2,7 +2,7 @@
 
 namespace ArtMarketplace.Services
 {
-    public class NullMailService
+    public class NullMailService : IMailService
     {
         private readonly ILogger<NullMailService> _logger;
 

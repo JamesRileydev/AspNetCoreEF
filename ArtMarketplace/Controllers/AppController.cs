@@ -6,9 +6,9 @@ namespace ArtMarketplace.Controllers
 {
     public class AppController : Controller
     {
-        private NullMailService _mailService;
+        private IMailService _mailService;
 
-        public AppController(NullMailService mailService)
+        public AppController(IMailService mailService)
         {
             _mailService = mailService;
         }
@@ -32,7 +32,9 @@ namespace ArtMarketplace.Controllers
             {
                 //Send the email
                 _mailService.SendMail("jamesriley.dev@gmail.com", vm.Subject, $"From: {vm.Name} - {vm.Email}, Message: {vm.Message}");
+                ViewBag.UserMessage ="Mail Sent";
 
+                ModelState.Clear();
             }
             else
             {
