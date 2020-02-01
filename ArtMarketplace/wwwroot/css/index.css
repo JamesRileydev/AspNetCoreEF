@@ -1,11 +1,5 @@
-﻿body {
+﻿/*body {
 }
-
-/*.form {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-}*/
 
 .product-info{
     border: 1px solid grey;
@@ -55,4 +49,4 @@ menu li::after {
 
 menu li:last-of-type::after{
     content: "";
-}
+}*/
